@@ -1,0 +1,43 @@
+site_name: ShutterBug
+site_description: User and admin documentation for the ShutterBug Minecraft photography plugin.
+site_url: https://kernel-person.github.io/shutterbug-docs/
+repo_url: https://github.com/kernel-person/shutterbug-docs
+repo_name: kernel-person/shutterbug-docs
+
+theme:
+  name: material
+  language: en
+  logo: images/hero-camera-album.png
+  favicon: images/favicon.png
+  palette:
+    - scheme: default
+      primary: brown
+      accent: brown
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Commands: commands.md
+  - Camera Settings: camera-settings.md
+  - Albums And Collections: albums-and-collections.md
+  - Admin Configuration: admin-configuration.md
+  - Permissions: permissions.md
+  - Screenshot Checklist: screenshots.md
