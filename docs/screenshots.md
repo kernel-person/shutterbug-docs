@@ -24,10 +24,17 @@ Use the same scene for each low/high pair so the difference is obvious.
 | --- | --- | --- |
 | `images/profile-comparison-contact-sheet.png` | `camera-settings.md` | The same scene captured with Classic, Normal, and HQ/HQ2/HQ3/HQ4 profiles where permitted. |
 | `images/cinematic-mode-comparison.png` | `camera-settings.md` | A comparison of Normal and cinematic/HQ output for a visually interesting scene. |
+| `images/photo-size-comparison.png` | `camera-settings.md` | A labeled sheet showing 1x1, 2x2, 3x3, and 5x2 photo sizes. |
 | `images/size-single.png` | `camera-settings.md` | A single-map photo shown in inventory or on a wall. |
 | `images/size-large.png` | `camera-settings.md` | A larger multi-map photo displayed in item frames. |
+| `images/size-2x2.png` | `camera-settings.md` | The exported 2x2 photo size example. |
+| `images/size-3x3.png` | `camera-settings.md` | The exported 3x3 photo size example. |
+| `images/size-5x2.png` | `camera-settings.md` | The exported 5x2 photo size example. |
+| `images/fov-comparison.png` | `camera-settings.md` | A labeled sheet showing low, normal, and high FOV. |
 | `images/fov-low.png` | `camera-settings.md` | A low-FOV zoomed-in shot of one subject. |
+| `images/fov-normal.png` | `camera-settings.md` | A normal-FOV shot of the same location. |
 | `images/fov-high.png` | `camera-settings.md` | A high-FOV wide shot of the same location. |
+| `images/exposure-comparison.png` | `camera-settings.md` | A labeled sheet showing low, normal, and high exposure. |
 | `images/exposure-low.png` | `camera-settings.md` | A bright scene with lower exposure preserving highlights. |
 | `images/exposure-high.png` | `camera-settings.md` | A dark scene with higher exposure revealing detail. |
 | `images/viewfinder-overlay.png` | `camera-settings.md` | The camera viewfinder while aiming at a clear subject. |
@@ -39,6 +46,7 @@ Use the same scene for every filter screenshot.
 
 | Filename | Use On Page | What To Capture |
 | --- | --- | --- |
+| `images/filter-comparison.png` | `camera-settings.md` | A labeled sheet showing all filter outputs from the same scene. |
 | `images/filter-none.png` | `camera-settings.md` | The baseline image with no filter. |
 | `images/filter-sepia.png` | `camera-settings.md` | The same image with Sepia enabled. |
 | `images/filter-black-white.png` | `camera-settings.md` | The same image with Black & White enabled. |

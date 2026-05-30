@@ -1,120 +1,98 @@
 # Camera Settings
 
-![ShutterBug camera settings menu](images/settings-menu.png)
+<figure class="sb-figure">
+  <img src="../images/settings-menu.png" alt="ShutterBug camera settings menu">
+  <figcaption>The settings menu controls render profile, size, FOV, exposure, and filter before the next camera shot.</figcaption>
+</figure>
 
-Use `/sb settings` to tune the next photo before you take it. The menu is built around five controls: mode, size, FOV, exposure, and filter. These settings are per-player, so changing your camera does not change another player's camera.
+Use `/sb settings` to tune the next photo before you take it. Settings are per-player, so changing your camera does not change another player's camera.
+
+<div class="sb-callout">
+  <strong>Photo values are stored in exported PNG metadata.</strong> The comparison labels below use the mode, FOV, exposure, filter, photo size, tile count, and image size written by ShutterBug.
+</div>
 
 ## How To Use The Menu
 
 | Slot | Setting | How To Change It |
 | --- | --- | --- |
-| Mode | Render profile | Click to cycle. Cinematic/HQ profiles require permission. |
+| Mode | Render profile | Click to cycle. HQ profiles require permission. |
 | Size | Photo dimensions | Click to cycle through available map sizes. |
-| FOV | Field of view | Left-click to lower by 5 degrees, right-click to raise by 5 degrees. |
+| FOV | Field of view | Left-click to lower by 5, right-click to raise by 5. |
 | Exposure | Brightness multiplier | Left-click to lower by 0.25, right-click to raise by 0.25. |
 | Filter | Color treatment | Click to cycle through available filters. |
 
-## Mode / Render Profile
+## Render Profile
 
-Mode controls the renderer used for the shot. Higher modes can make showcase photos look better, but they can also take longer to render.
+Render profile changes the raytracer used for the shot. Lower profiles are faster and more direct. Higher profiles add more atmosphere, lighting, water treatment, and post-processing.
+
+<figure class="sb-figure">
+  <img class="sb-map" src="../images/profile-comparison-contact-sheet.png" alt="Classic, Normal, Classic HQ, HQ, HQ2, HQ3, and HQ4 render profile comparison">
+  <figcaption>All render profiles photographed from the same locked scene. Labels are taken from PNG metadata.</figcaption>
+</figure>
 
 | Mode | Best For | Notes |
 | --- | --- | --- |
-| Classic | Fast shots and original-style map rendering. | Crisp, simple, closest to the original look. |
+| Classic | Fast collection photos and quick previews. | Crisp, simple, closest to the original map look. |
 | Normal | Everyday photography. | Balanced quality and speed. |
-| Classic HQ | Higher quality classic-style captures. | Requires cinematic permission. |
-| HQ | Showcase shots with smoother rendering. | Requires cinematic permission. |
-| HQ2 | Scenes with more lighting and atmosphere. | Requires cinematic permission. |
-| HQ3 | High-end color and tone treatment. | Requires cinematic permission. |
-| HQ4 | Maximum quality showcase photos. | Requires cinematic permission and may take the longest. |
+| Classic HQ | Higher quality classic-style captures. | Requires HQ/cinematic permission. |
+| HQ | Showcase shots. | Better lighting and atmosphere. |
+| HQ2 | Scenes with water, reflections, or richer lighting. | Requires HQ/cinematic permission. |
+| HQ3 | High-end color and tone treatment. | Requires HQ/cinematic permission. |
+| HQ4 | Final showcase images. | Maximum quality and longest render time. |
 
-![Classic, Normal, and HQ render profile comparison](images/profile-comparison-contact-sheet.png)
+<figure class="sb-figure">
+  <img class="sb-map" src="../images/cinematic-mode-comparison.png" alt="Normal and HQ4 render comparison">
+  <figcaption>Normal is the practical default. HQ4 is for final shots where render time matters less than image quality.</figcaption>
+</figure>
 
-When to use lower modes:
+## Photo Size
 
-- Taking many photos quickly.
-- Testing an angle before a final shot.
-- Photographing simple scenes where extra quality is not noticeable.
+Size controls how many Minecraft map items make up the photo. A single-map photo is easy to carry and use for collection progress. Larger sizes create more detail and are better for walls, galleries, and server showcases.
 
-When to use higher modes:
+<figure class="sb-figure">
+  <img class="sb-map" src="../images/photo-size-comparison.png" alt="1x1, 2x2, 3x3, and 5x2 photo size comparison">
+  <figcaption>Photo size metadata shows map count and pixel dimensions: 1x1, 2x2, 3x3, and 5x2.</figcaption>
+</figure>
 
-- Server showcase images.
-- Album completion shots you want to keep.
-- Builds with lighting, water, night scenes, or dramatic depth.
+| Size | Maps | Best For |
+| --- | ---: | --- |
+| 1x1 | 1 | Inventory photos, collection captures, quick sharing. |
+| 2x2 | 4 | Small wall displays with clearer detail. |
+| 3x3 | 9 | Large square displays and build documentation. |
+| 5x2 | 10 | Wide landscapes, banners, and panoramic wall displays. |
 
-![Normal and cinematic render comparison](images/cinematic-mode-comparison.png)
-
-## Size
-
-Size controls how many Minecraft map items make up the photo. A single-map photo is easy to carry and share. Larger sizes create a bigger image by splitting the photo across multiple map tiles.
-
-![Single-map photo size](images/size-single.png)
-
-Use smaller sizes when:
-
-- You want a normal inventory item.
-- You are taking quick collection photos.
-- Paper consumption is enabled and you want to save materials.
-
-![Large multi-map photo size](images/size-large.png)
-
-Use larger sizes when:
-
-- You want to display photos in item frames.
-- You are documenting a large build.
-- The server allows the extra map and paper cost.
+Paper cost, when enabled, scales with the number of map tiles.
 
 ## FOV
 
-FOV means field of view. It controls how much of the world fits into the frame.
+FOV means field of view. It controls how much of the world fits into the frame. Lower FOV feels zoomed in. Higher FOV feels wider.
 
-The plugin clamps FOV between `10` and `170` degrees. In the settings menu, left-click lowers FOV by 5 degrees and right-click raises it by 5 degrees. You may also see `/sb <fov>` or `/sb exposure:<amount>` style command use depending on your permissions.
+<figure class="sb-figure">
+  <img class="sb-map" src="../images/fov-comparison.png" alt="FOV 30, FOV 70, and FOV 125 comparison">
+  <figcaption>The same area at FOV 30, FOV 70, and FOV 125, read directly from ShutterBug PNG metadata.</figcaption>
+</figure>
 
-![Low FOV zoomed-in photo](images/fov-low.png)
-
-Low FOV, such as `30` to `50`, feels zoomed in. It is useful for:
-
-- Portraits.
-- A single mob or player.
-- Distant details.
-- Cropping out distracting background.
-
-![High FOV wide photo](images/fov-high.png)
-
-High FOV, such as `90` to `120`, feels wide. It is useful for:
-
-- Interiors where you cannot step back.
-- Large builds.
-- Group shots.
-- Landscapes.
-
-Very high FOV can stretch the edges of the image. Use it when the extra width matters more than natural perspective.
+Use low FOV for portraits, mobs, and distant details. Use normal FOV for most photos. Use high FOV for interiors, large builds, group shots, and landscapes. Very high FOV can stretch the edges, so use it when coverage matters more than natural perspective.
 
 ## Exposure
 
-Exposure controls final brightness. The plugin clamps exposure between `0.25x` and `4.0x`. In the settings menu, left-click lowers exposure by `0.25` and right-click raises it by `0.25`.
+Exposure controls final brightness. The plugin clamps exposure between `0.25x` and `4.0x`.
 
-![Low exposure photo](images/exposure-low.png)
+<figure class="sb-figure">
+  <img class="sb-map" src="../images/exposure-comparison.png" alt="Low, normal, and high exposure comparison">
+  <figcaption>Low exposure preserves bright areas. Higher exposure makes shadows and dark scenes easier to read.</figcaption>
+</figure>
 
-Lower exposure is useful when:
-
-- The sky is washing out the scene.
-- Lava, glowstone, torches, or bright blocks are too strong.
-- You want a moodier night photo.
-
-![High exposure photo](images/exposure-high.png)
-
-Higher exposure is useful when:
-
-- The scene is too dark.
-- Subjects are in shadow.
-- Caves, forests, or night scenes need more readable detail.
-
-A small adjustment is usually enough. Start near `1.0x`, then move up or down one step at a time.
+Start near `1.0x`, then move up or down one step at a time. A small adjustment is usually enough.
 
 ## Filters
 
 Filters apply a final color treatment after the photo is rendered. They do not change the world, only the map image.
+
+<figure class="sb-figure">
+  <img class="sb-map" src="../images/filter-comparison.png" alt="None, Sepia, Black and White, Inverted, Warm, Cool, and Vintage filter comparison">
+  <figcaption>Every filter shown on the same scene with FOV 70 and exposure 1x.</figcaption>
+</figure>
 
 | Filter | Effect | Good For |
 | --- | --- | --- |
@@ -126,51 +104,40 @@ Filters apply a final color treatment after the photo is rendered. They do not c
 | Cool | Cooler blue tone. | Snow, night, ocean, End scenes. |
 | Vintage | Aged color treatment. | Postcards and collection-style photos. |
 
-![No filter example](images/filter-none.png)
-
-![Sepia filter example](images/filter-sepia.png)
-
-![Black and white filter example](images/filter-black-white.png)
-
-![Inverted filter example](images/filter-inverted.png)
-
-![Warm filter example](images/filter-warm.png)
-
-![Cool filter example](images/filter-cool.png)
-
-![Vintage filter example](images/filter-vintage.png)
-
 ## Viewfinder
 
-The camera item can show a viewfinder preview while you aim. The viewfinder helps you frame the shot before spending paper or waiting for a render.
+<figure class="sb-figure">
+  <img src="../images/viewfinder-overlay.png" alt="ShutterBug camera viewfinder overlay while aiming">
+  <figcaption>The viewfinder helps frame the shot before spending paper or waiting for a render.</figcaption>
+</figure>
 
-![Viewfinder overlay while aiming](images/viewfinder-overlay.png)
-
-Use the viewfinder to check:
-
-- Whether the subject is in frame.
-- Whether a large photo size will capture the full scene.
-- Whether the FOV is too tight or too wide.
-- Whether you need to step forward, step back, or change angle.
+Use the viewfinder to check whether the subject is in frame, whether the FOV is too tight or too wide, and whether a larger photo size will capture the full scene.
 
 ## Paper Cost
 
 If `consume-paper` is enabled, ShutterBug consumes paper when photos are taken in survival-style play. The cost is based on server configuration and the number of map tiles in the photo.
 
-![Paper cost shown in help or settings](images/paper-cost-settings.png)
+<figure class="sb-figure">
+  <img src="../images/paper-cost-settings.png" alt="Paper cost shown in help or settings">
+  <figcaption>Servers can show the current paper cost in help or settings. Larger photos usually cost more paper.</figcaption>
+</figure>
 
 Typical behavior:
 
+<div class="sb-compact-list" markdown>
+
 - Single-map photos cost less.
-- Larger photos can cost more because they create more map tiles.
-- Creative or spectator players may be exempt depending on server behavior.
-- `/sb help` can show the current paper cost when it applies to you.
+- Larger photos create more map tiles.
+- Creative or spectator players may be exempt.
+- `/sb help` can show current paper cost when it applies.
+
+</div>
 
 ## Practical Presets
 
 | Goal | Suggested Settings |
 | --- | --- |
-| Fast collection photo | Normal, single map, FOV 70, exposure 1.0x, no filter. |
+| Fast collection photo | Normal, 1x1, FOV 70, exposure 1.0x, no filter. |
 | Player portrait | Normal or HQ, low FOV, exposure adjusted for face lighting. |
 | Large build | Normal/HQ, larger size, FOV 80-100. |
 | Dark cave | Normal/HQ, exposure 1.25x-2.0x, no filter or warm filter. |
