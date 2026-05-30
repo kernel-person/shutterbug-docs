@@ -2,7 +2,7 @@
 
 ![ShutterBug album item lore and progress](images/album-item-lore-progress.png)
 
-Albums give players a map-based way to track configured photo collections. Run `/sb album` to receive or open an album map when your server has granted album access.
+Albums give players a map-based way to track configured photo collections. By default, players craft one with a glass pane, paper, and a book and quill in the center column. Some servers also allow `/sb album` as a convenience command.
 
 ## Collections
 
@@ -16,6 +16,8 @@ Album item lore can show:
 
 - the selected collection
 - progress through the current collection
+- a check or cross for each photo subject
+- a short description of how to capture each subject
 - the current collection position
 - available collection state
 - controls for moving between collections
@@ -31,4 +33,6 @@ Albums can cycle between available collections. If a collection is empty or no c
 
 ## Admin Notes
 
-Admins define collections in `collections.yml`. Good collections are specific, achievable, and easy for players to understand from album text. After changing collections, use `/sb reload` if available and test with a non-admin player account to confirm progress and album display are clear.
+Admins define collections in `collections.yml`. Good collections are specific, achievable, and easy for players to understand from album text. After changing collections, use `/sb reload` if available and `/sb album refresh` while holding an album to update its display.
+
+Useful admin commands include `/sb album give [player]`, `/sb album status [player] [collection]`, and `/sb album reset <player> [collection|all]`.

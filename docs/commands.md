@@ -12,34 +12,22 @@ These commands are intended for normal camera use. Exact visibility depends on s
 
 | Command | Purpose |
 | --- | --- |
+| `/sb` | Show a short starter card for crafting, shooting, albums, wiki, and help. |
 | `/sb help` | Show the personalized ShutterBug help menu. |
+| `/sb wiki` | Show the public guide link configured by the server. |
 | `/sb settings` | Open the camera settings menu. |
 | `/sb album` | Receive or open an album map for configured collections. |
-| `/sb classic` | Take a Classic render when available. |
-| `/sb normal` | Take a normal camera shot when available. |
-| `/sb exposure:<amount>` | Apply exposure to the current shot when available. |
 
-Some builds also expose direct custom FOV use. Use `/sb help` on your server for the exact list available to your player.
-
-## Cinematic And HQ Shortcuts
-
-Cinematic shortcuts require both `shutterbug.use` and `shutterbug.cinematic`. These shortcuts are for higher-quality or specialized rendering profiles and may take longer than normal photos.
-
-| Command | Purpose |
-| --- | --- |
-| `/sb cinematic` or `/sb hq` | Use the first cinematic/HQ profile when available. |
-| `/sb hq2` or `/sb ultra` | Use the second cinematic/HQ profile when available. |
-| `/sb hq3` | Use the third cinematic/HQ profile when available. |
-| `/sb hq4` or `/sb extreme` | Use the highest cinematic/HQ profile when available. |
-| `/sb classichq` | Use Classic HQ when it is present in the command catalog. |
-
-If a shortcut does not appear in `/sb help` or tab completion, your server has not made it available to your player.
+Photos are taken with the camera item. Use `/sb settings` to change FOV, exposure, filters, render quality, and photo size before shooting.
 
 ## Admin Commands
 
 | Command | Permission | Purpose |
 | --- | --- | --- |
 | `/sb give` | `shutterbug.give` | Give a camera through the plugin command where available. |
+| `/sb album give [player]` | `shutterbug.give` | Give a Photo Album to yourself or another online player. |
+| `/sb album status [player] [collection]` | `shutterbug.give` | Inspect album progress. |
+| `/sb album reset <player> [collection\|all]` | `shutterbug.give` | Reset album progress and saved album thumbnails. |
 | `/sb reload` | `shutterbug.reload` | Reload ShutterBug configuration, language, and collection files. |
 | `/sb photo give <player> <image-url>` | `shutterbug.photo.give` | Create a photo map from an image URL for a player. |
 

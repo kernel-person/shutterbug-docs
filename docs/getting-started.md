@@ -18,9 +18,9 @@ Admins can change or disable this recipe, so always follow your server's rules i
 
 1. Craft or receive a camera.
 2. Hold the camera in your hand.
-3. Run `/sb help` to see the commands available to you.
+3. Run `/sb` for a short starter card, or `/sb help` for the full command list.
 4. Open `/sb settings` and check the current mode, size, FOV, exposure, and filter.
-5. Take a photo with the camera item or with an available `/sb` photo command.
+5. Take a photo with the camera item.
 6. Open the finished map item to view the photo.
 
 ![ShutterBug help command](images/help-command.png)
@@ -47,10 +47,18 @@ For detailed examples, see [Camera Settings](camera-settings.md).
 
 ![First ShutterBug photo map](images/first-photo-map.png)
 
-Run `/sb album` to receive an album map when collections are configured. Albums show the selected collection, how many subjects you have captured, and a collage of completed subjects. Left-click and right-click the album to cycle between available collections.
+Craft a Photo Album with a glass pane, paper, and a book and quill in the center column:
+
+| Row | Items |
+| --- | --- |
+| Top | Glass Pane in the middle slot |
+| Middle | Paper in the middle slot |
+| Bottom | Book and Quill in the middle slot |
+
+Servers may also allow `/sb album` as a convenience command. Albums show the selected collection, which subjects are complete, how to capture the remaining subjects, and a collage of completed photos. Left-click and right-click the album to cycle between available collections.
 
 ## If Something Looks Different
 
 Servers can customize recipes, permissions, paper costs, render defaults, and collections. When this guide and your server disagree, trust the in-game `/sb help`, `/sb settings`, and your server's admin notes first.
 
-For a longer guide, server owners can set `guide-url` so in-game help points to `{GITBOOK_URL}`.
+For a longer guide, use `/sb wiki`. Server owners can set `guide-url` so in-game help and `/sb wiki` point to `{GITBOOK_URL}`.
