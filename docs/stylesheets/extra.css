@@ -53,12 +53,11 @@
 }
 
 .md-typeset figure.sb-figure {
-  margin: 1.4rem 0 2rem;
-  padding: 0.85rem;
-  border: 1px solid var(--sb-mid);
-  border-radius: 8px;
-  background: linear-gradient(180deg, var(--sb-highlight), var(--sb-panel));
-  box-shadow: 0 12px 32px rgba(32, 34, 12, 0.14);
+  margin: 1.3rem 0 2rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .md-typeset figure.sb-figure img {
@@ -67,13 +66,15 @@
   max-width: none;
   height: auto;
   margin: 0 auto;
-  border: 1px solid var(--sb-dark);
+  border: 1px solid var(--sb-mid);
   border-radius: 6px;
   background: var(--sb-panel);
+  box-shadow: 0 10px 26px rgba(32, 34, 12, 0.12);
 }
 
 .md-typeset figure.sb-figure figcaption {
-  margin: 0.65rem 0 0;
+  margin: 0.55rem auto 0;
+  max-width: 46rem;
   color: var(--sb-muted);
   font-size: 0.82rem;
   line-height: 1.45;
@@ -96,6 +97,12 @@
 .md-typeset .sb-map {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
+}
+
+.md-typeset figure.sb-figure img.sb-map {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .md-typeset .sb-compact-list {
