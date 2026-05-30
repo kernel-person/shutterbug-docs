@@ -63,6 +63,23 @@ Size controls how many Minecraft map items make up the photo. A single-map photo
 
 Paper cost, when enabled, scales with the number of map tiles.
 
+### HQ4 Detail At Larger Sizes
+
+HQ4 changes the render quality. Photo size changes how much room the render has to show that detail. A 1x1 HQ4 photo is still a single 128x128 map, while a 3x3 HQ4 photo gives the same kind of render nine maps of space.
+
+<div class="sb-size-detail">
+  <figure class="sb-size-detail-card sb-size-detail-one">
+    <p class="sb-size-detail-title">1x1 HQ4</p>
+    <img class="sb-map" src="../images/hq4-size-detail-1x1.png" alt="1x1 HQ4 ShutterBug photo of a small lit island on water">
+    <figcaption>1 map, 128x128. Good for albums, inventory photos, and quick sharing.</figcaption>
+  </figure>
+  <figure class="sb-size-detail-card sb-size-detail-three">
+    <p class="sb-size-detail-title">3x3 HQ4</p>
+    <img class="sb-map" src="../images/hq4-size-detail-3x3.png" alt="3x3 HQ4 ShutterBug photo of the same scene with more detail">
+    <figcaption>9 maps, 384x384. Better for wall displays where reflections, lighting, and small blocks need room to read.</figcaption>
+  </figure>
+</div>
+
 ## FOV
 
 FOV means field of view. It controls how much of the world fits into the frame. Lower FOV feels zoomed in. Higher FOV feels wider.

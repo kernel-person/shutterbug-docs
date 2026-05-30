@@ -30,6 +30,8 @@ Use the same scene for each low/high pair so the difference is obvious.
 | `images/size-2x2.png` | `camera-settings.md` | The exported 2x2 photo size example. |
 | `images/size-3x3.png` | `camera-settings.md` | The exported 3x3 photo size example. |
 | `images/size-5x2.png` | `camera-settings.md` | The exported 5x2 photo size example. |
+| `images/hq4-size-detail-1x1.png` | `camera-settings.md` | A 1x1 HQ4 photo of the same scene used for the HQ4 size detail comparison. |
+| `images/hq4-size-detail-3x3.png` | `camera-settings.md` | A 3x3 HQ4 photo of the same scene used for the HQ4 size detail comparison. |
 | `images/fov-comparison.png` | `camera-settings.md` | A labeled sheet showing low, normal, and high FOV. |
 | `images/fov-low.png` | `camera-settings.md` | A low-FOV zoomed-in shot of one subject. |
 | `images/fov-normal.png` | `camera-settings.md` | A normal-FOV shot of the same location. |
