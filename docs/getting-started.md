@@ -1,31 +1,56 @@
 # Getting Started
 
+![Player crafting a ShutterBug camera](images/crafting-recipe.png)
+
+Start with a camera. On most servers, players either craft it, receive it from a kit or shop, or get one from staff during events. If crafting is enabled, the default recipe is:
+
+| Row | Items |
+| --- | --- |
+| Top | Glass Pane in the middle slot |
+| Middle | Iron Ingot, Redstone, Iron Ingot |
+| Bottom | Paper, Paper, Paper |
+
+Admins can change or disable this recipe, so always follow your server's rules if the recipe shown here does not match what you see in-game.
+
+## First Photo
+
+![Player holding the ShutterBug camera](images/holding-camera.png)
+
+1. Craft or receive a camera.
+2. Hold the camera in your hand.
+3. Run `/sb help` to see the commands available to you.
+4. Open `/sb settings` and check the current mode, size, FOV, exposure, and filter.
+5. Take a photo with the camera item or with an available `/sb` photo command.
+6. Open the finished map item to view the photo.
+
 ![ShutterBug help command](images/help-command.png)
 
-ShutterBug uses the `/sb` command, with `/shutterbug` as an alias. Most servers will give players access through their permissions plugin and then provide cameras through a server-specific method such as a kit, shop, crafting recipe, admin command, or event reward.
+`/sb help` is personalized. It only lists commands your account can use on the current server. If cinematic modes, admin tools, photo imports, or reload commands are not granted to you, they should not appear in your normal help output.
 
-## Server Setup
-
-Admins should install the plugin, start the server once to generate configuration files, review `config.yml`, define any photo collections in `collections.yml`, and assign permissions before inviting players to use ShutterBug.
-
-At minimum, players need access to the base `/sb` command and normal camera use. See [Permissions](permissions.md) for the available permission nodes.
-
-## First Steps For Players
-
-1. Ask a server admin how cameras are distributed on your server.
-2. Run `/sb help` to see the commands currently available to you.
-3. Open `/sb settings` to review your camera mode, size, FOV, exposure, and filter settings.
-4. Take a photo using the camera item or an available `/sb` photo command.
-5. Run `/sb album` to receive or open an album map for configured collections.
+## Open Camera Settings
 
 ![ShutterBug settings menu](images/settings-menu.png)
 
+Use `/sb settings` before important shots. The settings menu is where you tune how the next photo is rendered. The main controls are:
+
+| Setting | What It Changes |
+| --- | --- |
+| Mode | Render quality and visual style. |
+| Size | How many map tiles the photo uses. |
+| FOV | How wide or zoomed-in the camera feels. |
+| Exposure | How bright or dark the final photo is. |
+| Filter | Optional final color treatment. |
+
+For detailed examples, see [Camera Settings](camera-settings.md).
+
+## Albums
+
 ![First ShutterBug photo map](images/first-photo-map.png)
 
-## Personalized Help And Completion
+Run `/sb album` to receive an album map when collections are configured. Albums show the selected collection, how many subjects you have captured, and a collage of completed subjects. Left-click and right-click the album to cycle between available collections.
 
-`/sb help` only shows commands available to the current player based on permissions and enabled state. If a server has not granted a command, or if a feature is not enabled for you, it should not clutter your help output.
+## If Something Looks Different
 
-Tab completion follows the same permission-aware command list. When you press Tab after `/sb`, suggestions are filtered to commands you can use.
+Servers can customize recipes, permissions, paper costs, render defaults, and collections. When this guide and your server disagree, trust the in-game `/sb help`, `/sb settings`, and your server's admin notes first.
 
 For a longer guide, server owners can set `guide-url` so in-game help points to `{GITBOOK_URL}`.

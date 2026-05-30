@@ -2,12 +2,13 @@
 
 ![ShutterBug camera and album maps](images/hero-camera-album.png)
 
-ShutterBug adds in-world Minecraft photography to your server. Players can take photos from their point of view, render those photos onto map items, adjust camera settings, and use albums to track collection progress.
+ShutterBug adds in-world Minecraft photography to your server. Players craft or receive a camera, frame a scene, tune camera settings, and turn the result into Minecraft map art. Albums add a collection layer, letting players track photographed subjects and build progress over time.
 
-This guide is written for players and server admins:
+## Start Here
 
-- Players should start with [Getting Started](getting-started.md), [Commands](commands.md), [Camera Settings](camera-settings.md), and [Albums And Collections](albums-and-collections.md).
-- Server admins should also read [Admin Configuration](admin-configuration.md), [Permissions](permissions.md), and the [Screenshot Checklist](screenshots.md).
+If you are a player, start with [Getting Started](getting-started.md). The first steps are simple: get a camera, check `/sb help`, open `/sb settings`, and take your first photo.
+
+If you are an admin, start with [Admin Configuration](admin-configuration.md) and [Permissions](permissions.md), then use the [Screenshot Checklist](screenshots.md) when preparing your public server guide.
 
 The main command is `/sb`. The alias `/shutterbug` can be used anywhere `/sb` is shown.
 
@@ -15,15 +16,17 @@ In-game help can point players to `{GITBOOK_URL}` for the full guide.
 
 ## What Players Can Do
 
+- Craft or receive a ShutterBug camera.
 - Take Minecraft map photos from their current view.
-- Use `/sb settings` to adjust camera behavior.
-- Use quick camera modes where the server has enabled them.
-- Build albums that show collection progress.
+- Use `/sb settings` to tune mode, size, FOV, exposure, and filters.
+- Use albums to track collection progress.
 - See personalized `/sb help` output based on permissions and enabled features.
 
 ## What Admins Configure
 
-Admins control how players receive cameras, whether paper is consumed, how rendering behaves, what collections exist, which language file is used, and which permission groups can access advanced or administrative commands.
+Admins control camera distribution, paper costs, render defaults, collections, language files, the public guide link, and which permission groups can access advanced or administrative commands.
+
+## Sepia Text Palette
 
 ShutterBug's text palette uses a sepia photo look:
 
