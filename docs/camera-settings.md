@@ -5,7 +5,7 @@
   <figcaption>The settings menu controls render profile, size, FOV, exposure, and filter before the next camera shot.</figcaption>
 </figure>
 
-Use `/sb settings` to tune the next photo before you take it. Settings are per-player, so changing your camera does not change another player's camera.
+Use `/sb settings` or right-click with the camera to tune the next photo before you take it. Settings are per-player, so changing your camera does not change another player's camera.
 
 <div class="sb-callout">
   <strong>Photo values are stored in exported PNG metadata.</strong> The comparison labels below use the mode, FOV, exposure, filter, photo size, tile count, and image size written by ShutterBug.
@@ -111,7 +111,9 @@ Filters apply a final color treatment after the photo is rendered. They do not c
   <figcaption>The viewfinder helps frame the shot before spending paper or waiting for a render.</figcaption>
 </figure>
 
-Use the viewfinder to check whether the subject is in frame, whether the FOV is too tight or too wide, and whether a larger photo size will capture the full scene.
+Left-click while holding the camera to show the viewfinder. Use it to check whether the subject is in frame, whether the FOV is too tight or too wide, and whether a larger photo size will capture the full scene.
+
+When the frame looks right, sneak and right-click to take a photo. Sneak and left-click to take a selfie.
 
 ## Paper Cost
 

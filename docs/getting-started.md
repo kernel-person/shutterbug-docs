@@ -19,9 +19,10 @@ Admins can change or disable this recipe, so always follow your server's rules i
 1. Craft or receive a camera.
 2. Hold the camera in your hand.
 3. Run `/sb` for a short starter card, or `/sb help` for the full command list.
-4. Open `/sb settings` and check the current mode, size, FOV, exposure, and filter.
-5. Take a photo with the camera item.
-6. Open the finished map item to view the photo.
+4. Right-click with the camera, or run `/sb settings`, and check the current mode, size, FOV, exposure, and filter.
+5. Left-click to show the viewfinder and frame the shot.
+6. Sneak and right-click to take a photo, or sneak and left-click to take a selfie.
+7. Open the finished map item to view the photo.
 
 ![ShutterBug help command](images/help-command.png)
 
@@ -31,7 +32,7 @@ Admins can change or disable this recipe, so always follow your server's rules i
 
 ![ShutterBug settings menu](images/settings-menu.png)
 
-Use `/sb settings` before important shots. The settings menu is where you tune how the next photo is rendered. The main controls are:
+Use `/sb settings` before important shots, or right-click while holding the camera. The settings menu is where you tune how the next photo is rendered. The main controls are:
 
 | Setting | What It Changes |
 | --- | --- |

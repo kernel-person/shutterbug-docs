@@ -18,7 +18,7 @@ These commands are intended for normal camera use. Exact visibility depends on s
 | `/sb settings` | Open the camera settings menu. |
 | `/sb album` | Receive or open an album map for configured collections. |
 
-Photos are taken with the camera item. Use `/sb settings` to change FOV, exposure, filters, render quality, and photo size before shooting.
+Photos are taken with the camera item, not a command. Left-click shows the viewfinder, right-click opens camera settings, sneak and right-click takes a photo, and sneak and left-click takes a selfie. Use `/sb settings` to change FOV, exposure, filters, render quality, and photo size before shooting.
 
 ## Admin Commands
 
