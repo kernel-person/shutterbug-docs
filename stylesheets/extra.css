@@ -1,0 +1,122 @@
+:root {
+  --sb-shadow: #20220c;
+  --sb-dark: #423e25;
+  --sb-muted: #746754;
+  --sb-mid: #b4a797;
+  --sb-light: #d3c7b9;
+  --sb-highlight: #dfd7cc;
+  --sb-page: #fbf8f3;
+  --sb-panel: #f0ebe4;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--sb-dark);
+  --md-primary-fg-color--light: var(--sb-muted);
+  --md-primary-fg-color--dark: var(--sb-shadow);
+  --md-accent-fg-color: var(--sb-muted);
+  --md-default-bg-color: #fbf8f3;
+  --md-footer-bg-color: var(--sb-dark);
+  --md-footer-bg-color--dark: var(--sb-shadow);
+}
+
+.md-grid {
+  max-width: 76rem;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  color: var(--sb-dark);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--sb-dark);
+  color: var(--sb-highlight);
+}
+
+.md-typeset a {
+  color: var(--sb-dark);
+}
+
+.md-typeset code {
+  background-color: #f0ebe4;
+}
+
+.md-content .md-typeset > p > img {
+  display: block;
+  width: min(100%, 980px);
+  height: auto;
+  margin: 1.2rem auto;
+  border: 1px solid var(--sb-mid);
+  border-radius: 8px;
+  background: var(--sb-panel);
+  box-shadow: 0 10px 26px rgba(32, 34, 12, 0.12);
+}
+
+.md-typeset figure.sb-figure {
+  margin: 1.3rem 0 2rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.md-typeset figure.sb-figure img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--sb-mid);
+  border-radius: 6px;
+  background: var(--sb-panel);
+  box-shadow: 0 10px 26px rgba(32, 34, 12, 0.12);
+}
+
+.md-typeset figure.sb-figure figcaption {
+  margin: 0.55rem auto 0;
+  max-width: 46rem;
+  color: var(--sb-muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.md-typeset .sb-callout {
+  margin: 1rem 0 1.4rem;
+  padding: 0.9rem 1rem;
+  border-left: 4px solid var(--sb-dark);
+  border-radius: 8px;
+  background: var(--sb-panel);
+  color: var(--sb-dark);
+}
+
+.md-typeset .sb-callout strong {
+  color: var(--sb-shadow);
+}
+
+.md-typeset .sb-map {
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+.md-content .md-typeset > p > img.sb-map {
+  width: min(100%, 384px);
+  border-radius: 4px;
+}
+
+.md-typeset figure.sb-figure img.sb-map {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.md-typeset .sb-compact-list {
+  columns: 2;
+  column-gap: 2rem;
+}
+
+@media screen and (max-width: 42rem) {
+  .md-typeset .sb-compact-list {
+    columns: 1;
+  }
+}
