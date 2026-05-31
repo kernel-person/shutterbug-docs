@@ -95,8 +95,13 @@
 }
 
 .md-typeset .sb-map {
-  image-rendering: pixelated;
   image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+.md-content .md-typeset > p > img.sb-map {
+  width: min(100%, 384px);
+  border-radius: 4px;
 }
 
 .md-typeset figure.sb-figure img.sb-map {
