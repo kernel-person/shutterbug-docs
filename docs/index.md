@@ -1,40 +1,40 @@
 # ShutterBug
 
-![ShutterBug camera and album maps](images/hero-camera-album.png)
+![Bản đồ ảnh chụp từ máy ảnh và album của ShutterBug](images/hero-camera-album.png)
 
-ShutterBug adds in-world Minecraft photography to your server. Players craft or receive a camera, frame a scene, tune camera settings, and turn the result into Minecraft map art. Albums add a collection layer, letting players track photographed subjects and build progress over time.
+ShutterBug mang hệ thống chụp ảnh trực tiếp vào trong thế giới Minecraft. Người chơi có thể chế tạo hoặc nhận máy ảnh, căn chỉnh khung hình, điều chỉnh các thiết lập và lưu ảnh chụp thành bản đồ Minecraft. Album giúp người chơi sưu tầm ảnh, theo dõi những chủ thể đã chụp và dần hoàn thành các bộ sưu tập.
 
-## Start Here
+## Bắt đầu tại đây
 
-If you are a player, start with [Getting Started](getting-started.md). The first steps are simple: get a camera, check `/sb help`, open `/sb settings`, and take your first photo.
+Nếu là người chơi, hãy bắt đầu với [Bắt đầu](getting-started.md). Các bước đầu tiên rất đơn giản: nhận một chiếc máy ảnh, kiểm tra `/sb help`, mở `/sb settings` và chụp bức ảnh đầu tiên.
 
-If you are an admin, start with [Admin Configuration](admin-configuration.md) and [Permissions](permissions.md), then use the [Screenshot Checklist](screenshots.md) when preparing your public server guide.
+Nếu là quản trị viên, hãy bắt đầu với [Cấu hình dành cho quản trị viên](admin-configuration.md) và [Quyền](permissions.md), sau đó sử dụng [Danh sách kiểm tra ảnh chụp màn hình](screenshots.md) khi chuẩn bị tài liệu hướng dẫn cho máy chủ.
 
-The main command is `/sb`. The alias `/shutterbug` can be used anywhere `/sb` is shown.
+Lệnh chính là `/sb`. Có thể sử dụng bí danh `/shutterbug` ở bất kỳ nơi nào tài liệu ghi `/sb`.
 
-In-game help can point players to `{GITBOOK_URL}` for the full guide.
+Phần trợ giúp trong trò chơi có thể dẫn người chơi đến `{GITBOOK_URL}` để xem toàn bộ tài liệu hướng dẫn.
 
-## What Players Can Do
+## Người chơi có thể làm gì
 
-- Craft or receive a ShutterBug camera.
-- Take Minecraft map photos from their current view.
-- Use `/sb settings` to tune mode, size, FOV, exposure, and filters.
-- Use albums to track collection progress.
-- See personalized `/sb help` output based on permissions and enabled features.
+- Chế tạo hoặc nhận máy ảnh ShutterBug.
+- Chụp ảnh thế giới Minecraft từ góc nhìn hiện tại.
+- Sử dụng `/sb settings` để điều chỉnh chế độ kết xuất, kích thước ảnh, FOV, độ phơi sáng và bộ lọc.
+- Sử dụng album để theo dõi tiến độ sưu tầm.
+- Xem danh sách lệnh `/sb help` được hiển thị riêng theo quyền và các tính năng đang được bật.
 
-## What Admins Configure
+## Quản trị viên có thể cấu hình gì
 
-Admins control camera distribution, paper costs, render defaults, collections, language files, the public guide link, and which permission groups can access advanced or administrative commands.
+Quản trị viên có thể thiết lập cách người chơi nhận máy ảnh, lượng giấy cần dùng khi chụp ảnh, chế độ kết xuất mặc định, các bộ sưu tập, tệp ngôn ngữ, liên kết đến tài liệu công khai và những nhóm quyền được phép sử dụng các lệnh nâng cao hoặc lệnh quản trị.
 
-## Sepia Text Palette
+## Bảng màu chữ Sepia (Sepia Text Palette)
 
-ShutterBug's text palette uses a sepia photo look:
+Bảng màu chữ của ShutterBug sử dụng tông màu nâu vàng mang phong cách ảnh cổ điển:
 
-| Swatch | Hex |
+| Màu | Mã Hex |
 | --- | --- |
-| Deep shadow | `#20220c` |
-| Dark sepia | `#423e25` |
-| Muted sepia | `#746754` |
-| Warm midtone | `#b4a797` |
-| Light paper | `#d3c7b9` |
-| Highlight paper | `#dfd7cc` |
+| Bóng tối sâu | `#20220c` |
+| Nâu vàng đậm | `#423e25` |
+| Nâu vàng dịu | `#746754` |
+| Tông trung tính ấm | `#b4a797` |
+| Màu giấy sáng | `#d3c7b9` |
+| Màu giấy nổi bật | `#dfd7cc` |

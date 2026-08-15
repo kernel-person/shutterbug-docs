@@ -1,12 +1,12 @@
 site_name: ShutterBug
-site_description: User and admin documentation for the ShutterBug Minecraft photography plugin.
+site_description: Tài liệu hướng dẫn sử dụng và quản trị plugin ShutterBug.
 site_url: https://kernel-person.github.io/shutterbug-docs/
 repo_url: https://github.com/kernel-person/shutterbug-docs
 repo_name: kernel-person/shutterbug-docs
 
 theme:
   name: material
-  language: en
+  language: vi
   logo: images/hero-camera-album.png
   favicon: images/favicon.png
   palette:
@@ -33,11 +33,11 @@ markdown_extensions:
       alternate_style: true
 
 nav:
-  - Home: index.md
-  - Getting Started: getting-started.md
-  - Commands: commands.md
-  - Camera Settings: camera-settings.md
-  - Albums And Collections: albums-and-collections.md
-  - Admin Configuration: admin-configuration.md
-  - Permissions: permissions.md
-  - Screenshot Checklist: screenshots.md
+  - Trang chủ: index.md
+  - Bắt đầu: getting-started.md
+  - Lệnh: commands.md
+  - Cài đặt máy ảnh: camera-settings.md
+  - Album và Bộ sưu tập: albums-and-collections.md
+  - Cấu hình quản trị: admin-configuration.md
+  - Quyền: permissions.md
+  - Danh sách ảnh chụp: screenshots.md

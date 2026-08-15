@@ -1,78 +1,78 @@
-# Screenshot Checklist
+# Danh sách kiểm tra ảnh chụp màn hình
 
-Use this checklist when preparing the public wiki, store page, or release screenshots. Capture images on a clean test server with a normal player account where possible, then repeat admin-only screenshots with an admin account.
+Sử dụng danh sách kiểm tra này khi chuẩn bị ảnh chụp màn hình cho Wiki công khai, trang bán hàng hoặc bản phát hành. Nên chụp ảnh trên một máy chủ thử nghiệm sạch bằng tài khoản người chơi thông thường nếu có thể, sau đó chụp riêng các nội dung chỉ dành cho quản trị viên bằng tài khoản quản trị.
 
-The repository currently includes placeholder PNGs so the site can build before final screenshots are ready. Replace the matching files in `docs/images/` when you capture the real images.
+Kho lưu trữ hiện có sẵn một số tệp PNG tạm để có thể xây dựng trang web trước khi hoàn tất ảnh chụp màn hình. Khi đã có ảnh chụp thực tế, hãy thay thế các tệp tương ứng trong `docs/images/`.
 
-## Player First Steps
+## Các bước đầu tiên của người chơi
 
-| Filename | Use On Page | What To Capture |
+| Tên tệp | Dùng cho trang | Nội dung cần chụp |
 | --- | --- | --- |
-| `images/hero-camera-album.png` | `index.md` | A polished first-view image showing a camera item, photo maps, and an album map together. |
-| `images/crafting-recipe.png` | `getting-started.md` | The default camera crafting recipe in a crafting table: glass pane, iron, redstone, and paper. |
-| `images/holding-camera.png` | `getting-started.md` | A normal player holding the ShutterBug camera before taking a photo. |
-| `images/help-command.png` | `getting-started.md` | `/sb help` output for a normal player, showing only player-available commands. |
-| `images/settings-menu.png` | `getting-started.md`, `camera-settings.md` | The `/sb settings` menu with clear mode, size, FOV, exposure, and filter controls. |
-| `images/first-photo-map.png` | `getting-started.md` | A player's first completed photo rendered onto a map item. |
-| `images/tab-completion.png` | `commands.md` | Tab completion after `/sb`, captured from a player whose suggestions are permission-filtered. |
+| `images/hero-camera-album.png` | `index.md` | Ảnh giới thiệu chính được chăm chút kỹ, hiển thị máy ảnh, các bản đồ ảnh và một bản đồ album được đặt cạnh nhau. |
+| `images/crafting-recipe.png` | `getting-started.md` | Công thức chế tạo máy ảnh mặc định trong bàn chế tạo: tấm kính, sắt, đá đỏ và giấy. |
+| `images/holding-camera.png` | `getting-started.md` | Người chơi thông thường đang cầm máy ảnh ShutterBug và chuẩn bị chụp ảnh. |
+| `images/help-command.png` | `getting-started.md` | Kết quả của `/sb help` dành cho người chơi thông thường, chỉ hiển thị những lệnh mà người chơi được phép sử dụng. |
+| `images/settings-menu.png` | `getting-started.md`, `camera-settings.md` | Menu `/sb settings` hiển thị rõ các tùy chọn chế độ kết xuất, kích thước ảnh, FOV, độ phơi sáng và bộ lọc. |
+| `images/first-photo-map.png` | `getting-started.md` | Bức ảnh đầu tiên của người chơi được hiển thị trên vật phẩm bản đồ. |
+| `images/tab-completion.png` | `commands.md` | Tính năng tự động điền sau `/sb`, hiển thị các lệnh được lọc theo quyền của người chơi. |
 
-## Camera Settings Comparisons
+## So sánh các cài đặt máy ảnh
 
-Use the same scene for each low/high pair so the difference is obvious.
+Đối với mỗi cặp ảnh chất lượng thấp và cao, hãy sử dụng cùng một khung cảnh để dễ dàng nhận ra sự khác biệt.
 
-| Filename | Use On Page | What To Capture |
+| Tên tệp | Dùng cho trang | Nội dung cần chụp |
 | --- | --- | --- |
-| `images/profile-comparison-contact-sheet.png` | `camera-settings.md` | The same scene captured with Classic, Normal, and HQ/HQ2/HQ3/HQ4 profiles where permitted. |
-| `images/cinematic-mode-comparison.png` | `camera-settings.md` | A comparison of Normal and cinematic/HQ output for a visually interesting scene. |
-| `images/photo-size-comparison.png` | `camera-settings.md` | A labeled sheet showing 1x1, 2x2, 3x3, and 5x2 photo sizes. |
-| `images/size-single.png` | `camera-settings.md` | A single-map photo shown in inventory or on a wall. |
-| `images/size-large.png` | `camera-settings.md` | A larger multi-map photo displayed in item frames. |
-| `images/size-2x2.png` | `camera-settings.md` | The exported 2x2 photo size example. |
-| `images/size-3x3.png` | `camera-settings.md` | The exported 3x3 photo size example. |
-| `images/size-5x2.png` | `camera-settings.md` | The exported 5x2 photo size example. |
-| `images/fov-comparison.png` | `camera-settings.md` | A labeled sheet showing low, normal, and high FOV. |
-| `images/fov-low.png` | `camera-settings.md` | A low-FOV zoomed-in shot of one subject. |
-| `images/fov-normal.png` | `camera-settings.md` | A normal-FOV shot of the same location. |
-| `images/fov-high.png` | `camera-settings.md` | A high-FOV wide shot of the same location. |
-| `images/exposure-comparison.png` | `camera-settings.md` | A labeled sheet showing low, normal, and high exposure. |
-| `images/exposure-low.png` | `camera-settings.md` | A bright scene with lower exposure preserving highlights. |
-| `images/exposure-high.png` | `camera-settings.md` | A dark scene with higher exposure revealing detail. |
-| `images/viewfinder-overlay.png` | `camera-settings.md` | The camera viewfinder while aiming at a clear subject. |
-| `images/paper-cost-settings.png` | `camera-settings.md` | A help or settings view that makes paper consumption/cost visible on the test server. |
+| `images/profile-comparison-contact-sheet.png` | `camera-settings.md` | Cùng một cảnh được chụp với các hồ sơ Classic, Normal và HQ/HQ2/HQ3/HQ4 khi được phép. |
+| `images/cinematic-mode-comparison.png` | `camera-settings.md` | So sánh ảnh chụp ở chế độ Normal và chế độ điện ảnh/HQ trên cùng một khung cảnh nổi bật. |
+| `images/photo-size-comparison.png` | `camera-settings.md` | Một bảng có nhãn hiển thị các kích thước ảnh 1x1, 2x2, 3x3 và 5x2. |
+| `images/size-single.png` | `camera-settings.md` | Một bức ảnh chỉ dùng một ô bản đồ, được hiển thị trong kho đồ hoặc treo trên tường. |
+| `images/size-large.png` | `camera-settings.md` | Một ảnh nhiều bản đồ lớn hơn được hiển thị trong các khung tranh. |
+| `images/size-2x2.png` | `camera-settings.md` | Ví dụ kích thước ảnh 2x2 đã xuất. |
+| `images/size-3x3.png` | `camera-settings.md` | Ví dụ kích thước ảnh 3x3 đã xuất. |
+| `images/size-5x2.png` | `camera-settings.md` | Ví dụ kích thước ảnh 5x2 đã xuất. |
+| `images/fov-comparison.png` | `camera-settings.md` | Một bảng có nhãn hiển thị FOV thấp, bình thường và cao. |
+| `images/fov-low.png` | `camera-settings.md` | Một cảnh chụp FOV thấp phóng to vào một chủ thể. |
+| `images/fov-normal.png` | `camera-settings.md` | Một cảnh chụp FOV bình thường ở cùng vị trí. |
+| `images/fov-high.png` | `camera-settings.md` | Một cảnh chụp FOV cao góc rộng ở cùng vị trí. |
+| `images/exposure-comparison.png` | `camera-settings.md` | Bảng so sánh có nhãn mức phơi sáng thấp, bình thường và cao. |
+| `images/exposure-low.png` | `camera-settings.md` | Một cảnh sáng với phơi sáng thấp giữ lại các vùng chói. |
+| `images/exposure-high.png` | `camera-settings.md` | Một cảnh tối với phơi sáng cao làm lộ chi tiết. |
+| `images/viewfinder-overlay.png` | `camera-settings.md` | Kính ngắm máy ảnh đang căn vào một chủ thể rõ ràng trong khung hình. |
+| `images/paper-cost-settings.png` | `camera-settings.md` | Giao diện trợ giúp hoặc cài đặt hiển thị rõ lượng giấy cần dùng trên máy chủ thử nghiệm. |
 
-## Filter Examples
+## Ví dụ bộ lọc
 
-Use the same scene for every filter screenshot.
+Sử dụng cùng một cảnh cho mọi ảnh chụp bộ lọc.
 
-| Filename | Use On Page | What To Capture |
+| Tên tệp | Dùng cho trang | Nội dung cần chụp |
 | --- | --- | --- |
-| `images/filter-comparison.png` | `camera-settings.md` | A labeled sheet showing all filter outputs from the same scene. |
-| `images/filter-none.png` | `camera-settings.md` | The baseline image with no filter. |
-| `images/filter-sepia.png` | `camera-settings.md` | The same image with Sepia enabled. |
-| `images/filter-black-white.png` | `camera-settings.md` | The same image with Black & White enabled. |
-| `images/filter-inverted.png` | `camera-settings.md` | The same image with Inverted enabled. |
-| `images/filter-warm.png` | `camera-settings.md` | The same image with Warm enabled. |
-| `images/filter-cool.png` | `camera-settings.md` | The same image with Cool enabled. |
-| `images/filter-vintage.png` | `camera-settings.md` | The same image with Vintage enabled. |
+| `images/filter-comparison.png` | `camera-settings.md` | Một bảng có nhãn hiển thị tất cả đầu ra bộ lọc từ cùng một cảnh. |
+| `images/filter-none.png` | `camera-settings.md` | Ảnh cơ bản không có bộ lọc. |
+| `images/filter-sepia.png` | `camera-settings.md` | Cùng ảnh đó với bộ lọc Sepia được bật. |
+| `images/filter-black-white.png` | `camera-settings.md` | Cùng ảnh đó với bộ lọc Đen & Trắng được bật. |
+| `images/filter-inverted.png` | `camera-settings.md` | Cùng ảnh đó với bộ lọc Inverted được bật. |
+| `images/filter-warm.png` | `camera-settings.md` | Cùng ảnh đó với bộ lọc Warm được bật. |
+| `images/filter-cool.png` | `camera-settings.md` | Cùng ảnh đó với bộ lọc Cool được bật. |
+| `images/filter-vintage.png` | `camera-settings.md` | Cùng ảnh đó với bộ lọc Vintage được bật. |
 
-## Albums And Admin Pages
+## Album và trang quản trị
 
-| Filename | Use On Page | What To Capture |
+| Tên tệp | Dùng cho trang | Nội dung cần chụp |
 | --- | --- | --- |
-| `images/album-item-lore-progress.png` | `albums-and-collections.md` | Album item lore showing selected collection and progress. |
-| `images/album-collage-map.png` | `albums-and-collections.md` | Album map/collage output after several subjects have been captured. |
-| `images/album-cycle-collections.png` | `albums-and-collections.md` | Album state before or after cycling to another collection. |
-| `images/config-excerpt.png` | `admin-configuration.md` | A cropped editor view of safe, non-secret `config.yml` settings such as paper consumption and render defaults. |
-| `images/collection-definition-example.png` | `admin-configuration.md` | A cropped `collections.yml` example with a clear collection name and a few subjects. |
-| `images/reload-confirmation.png` | `admin-configuration.md` | Successful `/sb reload` confirmation in chat. |
-| `images/permissions-admin-groups.png` | `permissions.md` | Permission plugin group setup or a clean permissions table from your admin tooling. |
-| `images/photo-import-url-map.png` | `permissions.md` | Admin-created URL photo map from `/sb photo give <player> <image-url>`, using an image you have rights to use. |
+| `images/album-item-lore-progress.png` | `albums-and-collections.md` | Dòng mô tả vật phẩm album hiển thị bộ sưu tập đã chọn và tiến trình. |
+| `images/album-collage-map.png` | `albums-and-collections.md` | Đầu ra bản đồ/ghép ảnh album sau khi đã chụp một số chủ đề. |
+| `images/album-cycle-collections.png` | `albums-and-collections.md` | Trạng thái album trước hoặc sau khi chuyển sang một bộ sưu tập khác. |
+| `images/config-excerpt.png` | `admin-configuration.md` | Ảnh cắt từ trình soạn thảo của các cài đặt `config.yml` an toàn, không bí mật như tiêu thụ giấy và mặc định kết xuất. |
+| `images/collection-definition-example.png` | `admin-configuration.md` | Một ví dụ `collections.yml` đã cắt, với tên bộ sưu tập rõ ràng và một vài chủ đề. |
+| `images/reload-confirmation.png` | `admin-configuration.md` | Xác nhận `/sb reload` thành công trong khung chat. |
+| `images/permissions-admin-groups.png` | `permissions.md` | Thiết lập nhóm trong plugin phân quyền hoặc một bảng quyền gọn gàng từ công cụ quản trị của bạn. |
+| `images/photo-import-url-map.png` | `permissions.md` | Bản đồ ảnh tạo từ URL bằng lệnh `/sb photo give <player> <image-url>` do quản trị viên thực hiện, sử dụng ảnh bạn có quyền dùng. |
 
-## Capture Notes
+## Ghi chú khi chụp
 
-- Use `{GITBOOK_URL}` in staged help text until the real public docs URL is configured.
-- Capture normal player help separately from admin help so permission-aware behavior is obvious.
-- Avoid showing private server IPs, license keys, private coordinates, or player information.
-- Use the same texture pack, shader, and UI scale across comparison screenshots.
-- Prefer readable chat and inventory screenshots over dramatic angles when documenting commands or settings.
-- Keep originals somewhere outside the repo so screenshots can be recropped later if needed.
+- Trong tài liệu hướng dẫn tạm thời, hãy dùng `{GITBOOK_URL}` cho đến khi URL tài liệu công khai được thiết lập.
+- Chụp riêng phần trợ giúp của người chơi thông thường và phần trợ giúp dành cho quản trị viên để thể hiện rõ sự khác nhau về quyền.
+- Không để lộ IP máy chủ riêng, khóa bản quyền, tọa độ hoặc thông tin cá nhân của người chơi.
+- Sử dụng cùng một gói tài nguyên, shader và tỷ lệ giao diện cho tất cả ảnh dùng để so sánh.
+- Khi chụp lệnh hoặc cài đặt, ưu tiên khung chat và giao diện kho đồ dễ đọc thay vì những góc chụp đẹp nhưng khó xem nội dung.
+- Giữ lại ảnh gốc bên ngoài kho lưu trữ để có thể chỉnh sửa hoặc cắt lại khi cần.

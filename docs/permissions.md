@@ -1,31 +1,31 @@
-# Permissions
+# Quyền
 
-![ShutterBug admin permission groups](images/permissions-admin-groups.png)
+![Các nhóm quyền quản trị ShutterBug](images/permissions-admin-groups.png)
 
-Use these nodes with your permissions plugin. Defaults are defined by the plugin.
+Sử dụng các quyền này với plugin phân quyền của bạn. Giá trị mặc định do plugin định nghĩa.
 
-| Permission | Default | Purpose |
+| Quyền | Mặc định | Mục đích |
 | --- | --- | --- |
-| `shutterbug.sb` | `true` | Base permission for the `/sb` command. |
-| `shutterbug.use` | `true` | Allows normal camera use, including taking photos, settings, and albums where enabled. |
-| `shutterbug.give` | `op` | Allows `/sb give` and staff-oriented admin/testing tools gated behind the give permission. |
-| `shutterbug.reload` | `op` | Allows `/sb reload`. |
-| `shutterbug.cinematic` | `op` | Allows cinematic/HQ render profile commands. |
-| `shutterbug.photo.give` | `op` | Allows `/sb photo give <player> <image-url>`. |
+| `shutterbug.sb` | `true` | Quyền cơ bản để dùng lệnh `/sb`. |
+| `shutterbug.use` | `true` | Cho phép sử dụng máy ảnh thông thường, bao gồm chụp ảnh, cài đặt và album khi được bật. |
+| `shutterbug.give` | `op` | Cho phép dùng `/sb give` và các công cụ quản trị/kiểm tra dành cho nhân viên được kiểm soát bởi quyền give. |
+| `shutterbug.reload` | `op` | Cho phép dùng `/sb reload`. |
+| `shutterbug.cinematic` | `op` | Cho phép dùng lệnh hồ sơ kết xuất HQ. |
+| `shutterbug.photo.give` | `op` | Cho phép dùng `/sb photo give <player> <image-url>`. |
 
-## Help And Tab Completion
+## Trợ giúp và tự động điền
 
-Normal `/sb help` and tab completion hide commands the sender cannot use. This keeps regular player help concise and lets admins safely expose staff commands only to the groups that need them.
+Danh sách `/sb help` và tính năng tự động điền sẽ chỉ hiển thị những lệnh mà người chơi có quyền sử dụng. Nhờ đó, danh sách lệnh của người chơi luôn gọn gàng, còn quản trị viên có thể giới hạn các lệnh dành cho nhân viên chỉ cho những nhóm được phép sử dụng.
 
-## Suggested Groups
+## Nhóm quyền gợi ý
 
-| Group | Suggested Nodes |
+| Nhóm | Quyền gợi ý |
 | --- | --- |
-| Player | `shutterbug.sb`, `shutterbug.use` |
-| Photographer | Player nodes plus `shutterbug.cinematic` if your server wants advanced render profiles available to trusted players. |
-| Moderator | Photographer nodes plus selected staff permissions such as `shutterbug.give` only if moderators should distribute cameras or use testing tools. |
-| Admin | All ShutterBug permissions. |
+| Người chơi | `shutterbug.sb`, `shutterbug.use` |
+| Nhiếp ảnh gia | Quyền nhóm Người chơi cộng thêm `shutterbug.cinematic` nếu máy chủ của quản trị viên muốn mở các hồ sơ kết xuất nâng cao cho người chơi đáng tin cậy. |
+| Điều hành viên | Có toàn bộ quyền của nhóm Nhiếp ảnh gia và thêm một số quyền được chọn như `shutterbug.give`, dùng khi cần phát máy ảnh hoặc sử dụng các công cụ kiểm tra. |
+| Quản trị viên | Tất cả các quyền ShutterBug. |
 
-Review staff permissions carefully. `/sb photo give <player> <image-url>` can import external images onto maps and should be limited to trusted admins.
+Hãy kiểm tra kỹ các quyền dành cho nhân sự máy chủ. Lệnh `/sb photo give <player> <image-url>` cho phép đưa ảnh bên ngoài vào bản đồ, vì vậy, chỉ nên cấp quyền này cho những nhân sự đáng tin cậy.
 
-![ShutterBug URL photo map import](images/photo-import-url-map.png)
+![Nhập ảnh bản đồ từ URL ShutterBug](images/photo-import-url-map.png)
