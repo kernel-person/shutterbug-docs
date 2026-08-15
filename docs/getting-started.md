@@ -1,65 +1,65 @@
-# Getting Started
+# Bắt đầu
 
-![Player crafting a ShutterBug camera](images/crafting-recipe.png)
+![Người chơi chế tạo máy ảnh ShutterBug](images/crafting-recipe.png)
 
-Start with a camera. On most servers, players either craft it, receive it from a kit or shop, or get one from staff during events. If crafting is enabled, the default recipe is:
+Thử bắt đầu với một chiếc máy ảnh. Trên hầu hết máy chủ, người chơi có thể tự chế tạo máy ảnh, nhận từ bộ vật phẩm hoặc cửa hàng, hoặc được quản trị viên cấp trong các sự kiện. Nếu tính năng chế tạo được bật, công thức mặc định là:
 
-| Row | Items |
+| Hàng | Vật phẩm |
 | --- | --- |
-| Top | Glass Pane in the middle slot |
-| Middle | Iron Ingot, Redstone, Iron Ingot |
-| Bottom | Paper, Paper, Paper |
+| Trên | Tấm kính vanilla ở ô giữa |
+| Giữa | Thỏi sắt, Đá đỏ, Thỏi sắt |
+| Dưới | Giấy, Giấy, Giấy |
 
-Admins can change or disable this recipe, so always follow your server's rules if the recipe shown here does not match what you see in-game.
+Quản trị viên có thể thay đổi hoặc tắt công thức này, vì vậy hãy làm theo cấu hình của máy chủ nếu công thức trong tài liệu khác với công thức đang có trong trò chơi.
 
-## First Photo
+## Bức ảnh đầu tiên
 
-![Player holding the ShutterBug camera](images/holding-camera.png)
+![Người chơi cầm máy ảnh ShutterBug](images/holding-camera.png)
 
-1. Craft or receive a camera.
-2. Hold the camera in your hand.
-3. Run `/sb` for a short starter card, or `/sb help` for the full command list.
-4. Right-click with the camera, or run `/sb settings`, and check the current mode, size, FOV, exposure, and filter.
-5. Left-click to show the viewfinder and frame the shot.
-6. Sneak and right-click to take a photo, or sneak and left-click to take a selfie.
-7. Open the finished map item to view the photo.
+1. Chế tạo hoặc nhận một chiếc máy ảnh.
+2. Cầm máy ảnh trong tay.
+3. Dùng `/sb` để xem thẻ khởi động ngắn, hoặc `/sb help` để xem danh sách lệnh đầy đủ.
+4. Nhấp chuột phải khi cầm máy ảnh, hoặc dùng `/sb settings`, rồi kiểm tra chế độ, kích thước, FOV, phơi sáng và bộ lọc hiện tại.
+5. Nhấp chuột trái để hiện kính ngắm và căn khung hình.
+6. Nhấn Shift và nhấp chuột phải để chụp ảnh, hoặc nhấn Shift và nhấp chuột trái để chụp ảnh tự sướng.
+7. Mở vật phẩm bản đồ đã hoàn thành để xem bức ảnh.
 
-![ShutterBug help command](images/help-command.png)
+![Lệnh trợ giúp ShutterBug](images/help-command.png)
 
-`/sb help` is personalized. It only lists commands your account can use on the current server. If cinematic modes, admin tools, photo imports, or reload commands are not granted to you, they should not appear in your normal help output.
+`/sb help` sẽ hiển thị danh sách lệnh phù hợp với từng tài khoản. Lệnh này chỉ liệt kê những lệnh mà tài khoản của người chơi được phép sử dụng trên máy chủ hiện tại. Nếu người chơi không có quyền dùng chế độ điện ảnh, công cụ quản trị, nhập ảnh hoặc lệnh tải lại, các lệnh đó sẽ không xuất hiện trong danh sách trợ giúp.
 
-## Open Camera Settings
+## Mở cài đặt máy ảnh
 
-![ShutterBug settings menu](images/settings-menu.png)
+![Menu cài đặt ShutterBug](images/settings-menu.png)
 
-Use `/sb settings` before important shots, or right-click while holding the camera. The settings menu is where you tune how the next photo is rendered. The main controls are:
+Sử dụng `/sb settings` trước khi chụp những cảnh quan trọng, hoặc nhấp chuột phải khi đang cầm máy ảnh. Menu cài đặt cho phép điều chỉnh cách bức ảnh tiếp theo được kết xuất. Các tùy chọn chính gồm:
 
-| Setting | What It Changes |
+| Cài đặt | Thay đổi điều gì |
 | --- | --- |
-| Mode | Render quality and visual style. |
-| Size | How many map tiles the photo uses. |
-| FOV | How wide or zoomed-in the camera feels. |
-| Exposure | How bright or dark the final photo is. |
-| Filter | Optional final color treatment. |
+| Mode | Chế độ kết xuất, quyết định chất lượng và phong cách hình ảnh. |
+| Size | Kích thước ảnh, quyết định số ô bản đồ được sử dụng. |
+| FOV | Góc nhìn của máy ảnh, quyết định khung hình rộng hay hẹp. |
+| Exposure | Độ phơi sáng, quyết định ảnh cuối cùng sáng hay tối đến mức nào. |
+| Filter | Bộ lọc màu, tạo hiệu ứng màu sắc cho ảnh sau khi chụp. |
 
-For detailed examples, see [Camera Settings](camera-settings.md).
+Xem ví dụ chi tiết tại [Cài đặt máy ảnh](camera-settings.md).
 
-## Albums
+## Album
 
-![First ShutterBug photo map](images/first-photo-map.png)
+![Bản đồ ảnh đầu tiên của ShutterBug](images/first-photo-map.png)
 
-Craft a Photo Album with a glass pane, paper, and a book and quill in the center column:
+Chế tạo Album ảnh bằng một tấm kính, giấy và một cuốn sách bút lông ở cột giữa:
 
-| Row | Items |
+| Hàng | Vật phẩm |
 | --- | --- |
-| Top | Glass Pane in the middle slot |
-| Middle | Paper in the middle slot |
-| Bottom | Book and Quill in the middle slot |
+| Trên | Tấm kính ở ô giữa |
+| Giữa | Giấy ở ô giữa |
+| Dưới | Sách và bút lông ở ô giữa |
 
-Servers may also allow `/sb album` as a convenience command. Albums show the selected collection, which subjects are complete, how to capture the remaining subjects, and a collage of completed photos. Left-click and right-click the album to cycle between available collections.
+Máy chủ cũng có thể cho phép sử dụng `/sb album` để mở album nhanh. Album hiển thị bộ sưu tập đang chọn, các chủ đề đã hoàn thành, cách chụp những chủ đề còn thiếu và ảnh ghép từ các bức ảnh đã hoàn thành. Nhấp chuột trái hoặc phải vào album để chuyển qua các bộ sưu tập có sẵn.
 
-## If Something Looks Different
+## Nếu có gì khác biệt
 
-Servers can customize recipes, permissions, paper costs, render defaults, and collections. When this guide and your server disagree, trust the in-game `/sb help`, `/sb settings`, and your server's admin notes first.
+Máy chủ có thể tùy chỉnh công thức, quyền sử dụng, lượng giấy cần cho mỗi bức ảnh, chế độ kết xuất mặc định và các bộ sưu tập. Nếu nội dung trong hướng dẫn này khác với những gì đang có trên máy chủ, hãy ưu tiên thông tin từ `/sb help`, `/sb settings` trong trò chơi và hướng dẫn của quản trị viên máy chủ.
 
-For a longer guide, use `/sb wiki`. Server owners can set `guide-url` so in-game help and `/sb wiki` point to `{GITBOOK_URL}`.
+Để có hướng dẫn dài hơn, dùng `/sb wiki`. Chủ máy chủ có thể đặt `guide-url` để trợ giúp trong trò chơi và `/sb wiki` trỏ tới `{GITBOOK_URL}`.

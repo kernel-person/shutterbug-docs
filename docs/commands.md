@@ -1,44 +1,44 @@
-# Commands
+# Lệnh
 
-![Permission-aware ShutterBug tab completion](images/tab-completion.png)
+![Tự động điền lệnh ShutterBug có phân quyền](images/tab-completion.png)
 
-Use `/sb` for ShutterBug commands. `/shutterbug` is an alias for the same command.
+Dùng `/sb` cho các lệnh ShutterBug. `/shutterbug` là bí danh của cùng một lệnh.
 
-Command visibility is permission-aware. `/sb help` only lists commands the sender can use, and tab completion follows the same filtered list. Admins can use this to keep the player command surface simple while still exposing staff tools to trusted roles.
+Danh sách lệnh sẽ được hiển thị dựa trên quyền của từng người chơi. `/sb help` chỉ hiển thị những lệnh mà người chơi được phép sử dụng, và tính năng tự động điền cũng chỉ cung cấp các lệnh tương ứng. Nhờ đó, quản trị viên có thể giữ danh sách lệnh của người chơi gọn gàng, đồng thời vẫn cho phép các vai trò được tin cậy sử dụng những công cụ dành cho nhân viên.
 
-## Player Commands
+## Lệnh người chơi
 
-These commands are intended for normal camera use. Exact visibility depends on server permissions and enabled state.
+Các lệnh này dùng cho các thao tác chụp ảnh thông thường. Những lệnh nào được hiển thị còn phụ thuộc vào quyền của người chơi và các tính năng đang được bật trên máy chủ.
 
-| Command | Purpose |
+| Lệnh | Mục đích |
 | --- | --- |
-| `/sb` | Show a short starter card for crafting, shooting, albums, wiki, and help. |
-| `/sb help` | Show the personalized ShutterBug help menu. |
-| `/sb wiki` | Show the public guide link configured by the server. |
-| `/sb settings` | Open the camera settings menu. |
-| `/sb album` | Receive or open an album map for configured collections. |
+| `/sb` | Hiển thị thẻ khởi động ngắn gọn về chế tạo, chụp ảnh, album, wiki và trợ giúp. |
+| `/sb help` | Hiển thị menu trợ giúp ShutterBug được cá nhân hóa. |
+| `/sb wiki` | Hiển thị liên kết hướng dẫn công khai do máy chủ cấu hình. |
+| `/sb settings` | Mở menu cài đặt máy ảnh. |
+| `/sb album` | Nhận hoặc mở bản đồ album cho các bộ sưu tập đã cấu hình. |
 
-Photos are taken with the camera item, not a command. Left-click shows the viewfinder, right-click opens camera settings, sneak and right-click takes a photo, and sneak and left-click takes a selfie. Use `/sb settings` to change FOV, exposure, filters, render quality, and photo size before shooting.
+Ảnh được chụp trực tiếp bằng vật phẩm máy ảnh, không phải bằng lệnh. Nhấp chuột trái để mở kính ngắm, nhấp chuột phải để mở cài đặt máy ảnh, nhấn Shift rồi nhấp chuột phải để chụp ảnh và nhấn Shift rồi nhấp chuột trái để chụp ảnh tự sướng. Sử dụng `/sb settings` để điều chỉnh góc nhìn, độ phơi sáng, bộ lọc, chất lượng kết xuất và kích thước ảnh trước khi chụp.
 
-## Admin Commands
+## Lệnh quản trị
 
-| Command | Permission | Purpose |
+| Lệnh | Quyền | Mục đích |
 | --- | --- | --- |
-| `/sb give` | `shutterbug.give` | Give a camera through the plugin command where available. |
-| `/sb album give [player]` | `shutterbug.give` | Give a Photo Album to yourself or another online player. |
-| `/sb album status [player] [collection]` | `shutterbug.give` | Inspect album progress. |
-| `/sb album reset <player> [collection\|all]` | `shutterbug.give` | Reset album progress and saved album thumbnails. |
-| `/sb reload` | `shutterbug.reload` | Reload ShutterBug configuration, language, and collection files. |
-| `/sb photo give <player> <image-url>` | `shutterbug.photo.give` | Create a photo map from an image URL for a player. |
+| `/sb give` | `shutterbug.give` | Đưa máy ảnh thông qua lệnh plugin khi có sẵn. |
+| `/sb album give [player]` | `shutterbug.give` | Đưa Album ảnh cho chính bạn hoặc người chơi trực tuyến khác. |
+| `/sb album status [player] [collection]` | `shutterbug.give` | Kiểm tra tiến trình album. |
+| `/sb album reset <player> [collection\|all]` | `shutterbug.give` | Đặt lại tiến trình album và ảnh thu nhỏ album đã lưu. |
+| `/sb reload` | `shutterbug.reload` | Tải lại cấu hình, ngôn ngữ và tệp bộ sưu tập của ShutterBug. |
+| `/sb photo give <player> <image-url>` | `shutterbug.photo.give` | Tạo bản đồ ảnh cho người chơi từ URL ảnh. |
 
-## Admin And Testing Tools
+## Công cụ quản trị và kiểm tra
 
-Some builds expose admin/testing tools for checking render output, particles, camera behavior, albums, and controlled photo environments. These are staff tools, not normal player commands.
+Một số phiên bản có thêm các công cụ dành cho quản trị viên và kiểm tra, giúp theo dõi kết quả kết xuất, hiệu ứng hạt, hoạt động của máy ảnh, album và môi trường chụp được kiểm soát. Đây là các công cụ dành cho quản trị viên, không dành cho người chơi thông thường.
 
-Examples that may appear for permitted senders include `debug`, `debug_chest`, `design_album`, `testmob`, `testitem`, `testselfie`, `debugtestselfie`, `debugpitchselfie`, `debug_bed`, `locktime`, `lockweather`, `testsound`, and `testparticle`.
+Ví dụ có thể xuất hiện cho người gửi có quyền gồm `debug`, `debug_chest`, `design_album`, `testmob`, `testitem`, `testselfie`, `debugtestselfie`, `debugpitchselfie`, `debug_bed`, `locktime`, `lockweather`, `testsound` và `testparticle`.
 
-Because these tools are permission-aware and may vary by build, admins should rely on `/sb help` and tab completion in-game to confirm the exact available list.
+Vì các công cụ này có phân theo quyền và có thể thay đổi theo bản dựng, quản trị viên nên dựa vào `/sb help` và tính năng tự động điền trong trò chơi để xác nhận danh sách khả dụng chính xác.
 
-## Need More Detail?
+## Cần thêm chi tiết?
 
-Server owners can link players to `{GITBOOK_URL}` from the in-game help text or a server guide.
+Chủ máy chủ có thể liên kết người chơi tới `{GITBOOK_URL}` từ văn bản trợ giúp trong trò chơi hoặc hướng dẫn máy chủ.
